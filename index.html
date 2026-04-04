@@ -76,6 +76,25 @@
       text-align: center;
       padding: 15px;
     }
+
+    /* ✅ FIXED CHATBOT POSITION */
+    .chatbot-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 350px;
+      height: 500px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+
+    .chatbot-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
   </style>
 </head>
 
@@ -112,8 +131,10 @@
     🚀 Built for Chatbot Project
   </footer>
 
-  <!-- 🤖 YOUR CHATBOT EMBED CODE -->
-  <iframe width="640" height="480" src="https://embed.wotnot.io/5ZcifkFhnzYj071957451557K7CYQm6y/bot/5FYygGZpGvFS065115164769tX9Kt2Ye?display_header=false&history_retention=false" frameborder="0"></iframe>
+  <!-- ✅ FIXED CHATBOT EMBED -->
+  <div class="chatbot-container">
+    <iframe src="https://embed.wotnot.io/5ZcifkFhnzYj071957451557K7CYQm6y/bot/5FYygGZpGvFS065115164769tX9Kt2Ye?display_header=false&history_retention=false"></iframe>
+  </div>
 
 </body>
 </html>
