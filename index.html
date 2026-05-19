@@ -1,140 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Smart Job Chatbot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Job Application Chatbot</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      color: white;
-    }
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background:#f4f4f4;
+            font-family:Arial;
+            text-align:center;
+        }
 
-    .hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
+        h1{
+            margin-top:20px;
+            color:#333;
+        }
 
-    h1 {
-      font-size: 3.5em;
-      margin: 0;
-    }
+        .chatbot-container{
+            width:90%;
+            max-width:800px;
+            margin:20px auto;
+            height:600px;
+        }
 
-    p {
-      font-size: 1.3em;
-      margin: 15px 0;
-      opacity: 0.9;
-    }
-
-    .btn {
-      margin-top: 20px;
-      padding: 14px 30px;
-      font-size: 18px;
-      background: white;
-      color: #764ba2;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      transform: scale(1.1);
-      background: #eee;
-    }
-
-    .features {
-      background: white;
-      color: #333;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .feature-box {
-      display: inline-block;
-      width: 250px;
-      margin: 15px;
-      padding: 20px;
-      border-radius: 15px;
-      background: #f4f4f4;
-      transition: 0.3s;
-    }
-
-    .feature-box:hover {
-      transform: translateY(-10px);
-    }
-
-    footer {
-      background: #222;
-      color: #aaa;
-      text-align: center;
-      padding: 15px;
-    }
-
-    /* ✅ FIXED CHATBOT POSITION */
-    .chatbot-container {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 350px;
-      height: 500px;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
-      z-index: 999;
-    }
-
-    .chatbot-container iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+        iframe{
+            width:100%;
+            height:100%;
+            border:none;
+            border-radius:10px;
+        }
+    </style>
 </head>
 
 <body>
 
-  <div class="hero">
-    <h1>💼 Smart Job Assistant</h1>
-    <p>Your AI-powered hiring companion 🤖</p>
-    <button class="btn" onclick="alert('👉 Chatbot is at bottom right!')">
-      Start Application
-    </button>
-  </div>
+    <h1>🤖 Smart Job Application Chatbot</h1>
 
-  <div class="features">
-    <h2>✨ Features</h2>
-
-    <div class="feature-box">
-      <h3>⚡ Quick Apply</h3>
-      <p>Apply in seconds</p>
+    <div class="chatbot-container">
+        <iframe
+            src="https://embed.wotnot.io/5ZcifkFhnzYj071957451557K7CYQm6y/bot/5FYygGZpGvFS065115164769tX9Kt2Ye?display_header=false&history_retention=false">
+        </iframe>
     </div>
-
-    <div class="feature-box">
-      <h3>📊 Smart Screening</h3>
-      <p>Analyzes your profile</p>
-    </div>
-
-    <div class="feature-box">
-      <h3>📩 Instant Response</h3>
-      <p>Get confirmation instantly</p>
-    </div>
-  </div>
-
-  <footer>
-    🚀 Built for Chatbot Project
-  </footer>
-
-  <!-- ✅ FIXED CHATBOT EMBED -->
-  <div class="chatbot-container">
-    <iframe src="https://embed.wotnot.io/5ZcifkFhnzYj071957451557K7CYQm6y/bot/5FYygGZpGvFS065115164769tX9Kt2Ye?display_header=false&history_retention=false"></iframe>
-  </div>
 
 </body>
 </html>
